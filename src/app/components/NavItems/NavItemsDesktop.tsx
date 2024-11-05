@@ -12,17 +12,32 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
   return (
     <NavbarContent justify="end" className="gap-3">
       <NavbarItem className={`max-sm:hidden`}>
-        <SecondaryButton as={Link} href={"#nosotros"}>
+        <SecondaryButton
+          variant="bordered"
+          className="border-white"
+          as={Link}
+          href={"#nosotros"}
+        >
           Conocenos
         </SecondaryButton>
       </NavbarItem>
       <NavbarItem className={`max-sm:hidden`}>
-        <SecondaryButton as={Link} href={"#servicios"}>
+        <SecondaryButton
+          variant="bordered"
+          className="border-white"
+          as={Link}
+          href={"#servicios"}
+        >
           ¿Qué ofrecemos?
         </SecondaryButton>
       </NavbarItem>
       <NavbarItem className={`max-sm:hidden`}>
-        <SecondaryButton as={Link} href={"#ubicacion"}>
+        <SecondaryButton
+          variant="bordered"
+          className="border-white"
+          as={Link}
+          href={"#ubicacion"}
+        >
           Ubicación
         </SecondaryButton>
       </NavbarItem>
@@ -47,7 +62,12 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
         </SecondaryButton>
       </NavbarItem>
       <NavbarItem className={`max-sm:hidden`}>
-        <SecondaryButton variant="solid" color="primary" as={Link} href={"#contacto"}>
+        <SecondaryButton
+          variant="solid"
+          color="primary"
+          as={Link}
+          href={"#contacto"}
+        >
           Contacto
         </SecondaryButton>
       </NavbarItem>

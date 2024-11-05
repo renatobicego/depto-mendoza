@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar
       classNames={{
-        wrapper: "max-w-full mx-[7.5vw] px-11 backdrop-blur-xl mt-4 rounded-3xl bg-[#FAFAF995]",
+        wrapper: "max-w-full mx-[7.5vw] px-11 backdrop-blur-lg mt-4 rounded-3xl bg-[#FAFAF998]",
         base: "bg-transparent"
       }}
       isBlurred={false}

@@ -42,7 +42,7 @@ const ReviewItems = () => {
   return (
     <div className="flex gap-8">
       {items.map((item, index) => (
-        <div key={`${item.label}-${index}`} className="flex gap-4 w-36">
+        <div key={`${item.label}-${index}`} className="flex gap-4 w-36 hover:scale-105 transition-all">
           <Divider orientation="vertical" className="h-full" />
           <div className="flex flex-col items-start">
             <p className="text-xl font-normal max-w-32">{item.label}</p>

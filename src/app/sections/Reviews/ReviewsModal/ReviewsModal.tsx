@@ -43,7 +43,12 @@ const ReviewsModal = () => {
 
   return (
     <>
-      <SecondaryButton variant="solid" color="primary" onPress={onOpen}>
+      <SecondaryButton
+        variant="solid"
+        color="primary"
+        onPress={onOpen}
+        className="mt-2"
+      >
         Ver reseñas
       </SecondaryButton>
       <Modal

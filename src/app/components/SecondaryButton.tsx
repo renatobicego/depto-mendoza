@@ -11,9 +11,9 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({
   return (
     <Button
       variant="bordered"
-      className={`text-base ${props.className}`}
       radius="full"
       {...props}
+      className={`text-base ${props.className}`}
     >
       {children}
     </Button>
