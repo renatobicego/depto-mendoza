@@ -11,7 +11,7 @@ import { TbBrandBooking } from "react-icons/tb";
 const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
   return (
     <NavbarContent justify="end" className="gap-3">
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           variant="bordered"
           className="border-white"
@@ -21,7 +21,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           Conocenos
         </SecondaryButton>
       </NavbarItem>
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           variant="bordered"
           className="border-white"
@@ -31,7 +31,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           ¿Qué ofrecemos?
         </SecondaryButton>
       </NavbarItem>
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           variant="bordered"
           className="border-white"
@@ -41,7 +41,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           Ubicación
         </SecondaryButton>
       </NavbarItem>
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           className="text-airbnb border-airbnb p-0.5"
           isIconOnly
@@ -51,7 +51,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           <FaAirbnb className="size-6" />
         </SecondaryButton>
       </NavbarItem>
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           className="text-booking border-booking p-0.5"
           isIconOnly
@@ -61,7 +61,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           <TbBrandBooking className="size-6" />
         </SecondaryButton>
       </NavbarItem>
-      <NavbarItem className={`max-sm:hidden`}>
+      <NavbarItem className={`max-lg:hidden`}>
         <SecondaryButton
           variant="solid"
           color="primary"
@@ -73,7 +73,7 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
       </NavbarItem>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden"
+        className="lg:hidden"
       />
     </NavbarContent>
   );

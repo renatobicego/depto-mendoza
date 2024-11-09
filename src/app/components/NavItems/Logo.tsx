@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <NavbarContent>
       <NavbarBrand>
-        <h1 className="font-bold text-inherit text-3xl">Depto Mendoza</h1>
+        <h1 className="font-bold text-inherit text-2xl xl:text-3xl">Depto Mendoza</h1>
       </NavbarBrand>
     </NavbarContent>
   );

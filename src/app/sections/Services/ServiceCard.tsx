@@ -73,7 +73,7 @@ const ServiceCard = ({
       </Button>
       {/* Title overlay */}
       <div className="absolute bottom-6 left-6 w-fit py-6 pl-8 pr-10 bg-[#332F2F75] rounded-lg text-white z-10">
-        <h4 className="text-3xl font-semibold mb-2">{title}</h4>
+        <h4 className="text-2xl xl:text-3xl font-semibold mb-2">{title}</h4>
         <ModalServicesItems items={items} />
       </div>
     </div>

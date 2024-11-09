@@ -37,13 +37,13 @@ const Banner = () => {
 
       <motion.div
         style={{ opacity }}
-        className="flex gap-4 flex-col items-start mx-[7.5vw] text-white 
-        pt-60 relative z-10 2xl:max-w-[40%]"
+        className="flex gap-4 flex-col items-start mx-[4.5vw] xl:mx-[7.5vw] text-white 
+        pt-40 2xl:pt-60 relative z-10 lg:max-w-[60%] 2xl:max-w-[40%]"
       >
-        <h2 className="text-5xl font-bold leading-tight">
+        <h2 className="text-4xl xl:text-5xl font-bold leading-tight">
           Cálido y agradable departamento atendido por su propia dueña
         </h2>
-        <h3 className="text-3xl font-bold">
+        <h3 className="text-2xl xl:text-3xl font-bold">
           Ubicado en Godoy Cruz, Mendoza. Favorito entre los huéspedes de Airbnb
         </h3>
         <SecondaryButton variant="solid" color="primary" as={Link} href={"#"}>

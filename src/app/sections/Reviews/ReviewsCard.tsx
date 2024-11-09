@@ -12,15 +12,15 @@ const ReviewsCard = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.5 }}
       viewport={{ once: false }}
-      className="w-full px-[7.5vw] flex flex-col gap-4 items-center bg-white rounded-3xl py-20 shadow"
+      className="w-full px-[4.5vw] xl:px-[7.5vw] flex flex-col gap-4 items-center bg-white rounded-3xl py-20 shadow"
     >
       <Image
         src="/imgs/puntuacion-airbnb.png"
         alt="puntuacion 5.0"
         className="w-full"
       />
-      <h4 className="text-5xl font-bold">Favorito entre huéspedes</h4>
-      <p className="text-2xl max-w-[50%] text-center">
+      <h4 className="text-4xl xl:text-5xl font-bold">Favorito entre huéspedes</h4>
+      <p className="text-2xl lg:max-w-[70%] 2xl:max-w-[50%] text-center">
         Este alojamiento está entre el{" "}
         <span className="font-bold">10% de los mejores de todo el mundo</span>{" "}
         en{" "}
