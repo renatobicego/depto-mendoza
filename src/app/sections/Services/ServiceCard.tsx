@@ -6,7 +6,7 @@ import ModalServicesItems from "./ModalServicesItems";
 const ServiceCard = ({
   images,
   title,
-  items
+  items,
 }: {
   images: string[];
   title: string;
@@ -45,7 +45,7 @@ const ServiceCard = ({
             alt={`${title} ${index + 1}`}
             classNames={{
               wrapper:
-                "min-w-[200px] h-[70vh] rounded-lg overflow-hidden flex-shrink-0",
+                "min-w-[200px] lg:min-w-[34%] h-[60vh] lg:h-[80vh] rounded-lg overflow-hidden flex-shrink-0",
               img: "w-full h-full object-cover",
             }}
           />
@@ -54,7 +54,7 @@ const ServiceCard = ({
       <Button
         isIconOnly
         radius="full"
-        className="absolute top-1/2 -translate-y-1/2 right-6 z-10 bg-white"
+        className="absolute top-1/2 -translate-y-1/2 right-[1%] z-10 bg-white max-md:min-w-10 max-md:w-10 max-md:h-10"
         variant="solid"
         size="lg"
         onPress={scrollRight}
@@ -64,7 +64,7 @@ const ServiceCard = ({
       <Button
         isIconOnly
         radius="full"
-        className="absolute top-1/2 -translate-y-1/2 left-6 z-10 bg-white"
+        className="absolute top-1/2 -translate-y-1/2 left-[1%] z-10 bg-white max-md:min-w-10 max-md:w-10 max-md:h-10"
         variant="solid"
         size="lg"
         onPress={scrollLeft}
@@ -72,7 +72,8 @@ const ServiceCard = ({
         <FaChevronLeft />
       </Button>
       {/* Title overlay */}
-      <div className="absolute bottom-6 left-6 w-fit py-6 pl-8 pr-10 bg-[#332F2F75] rounded-lg text-white z-10">
+      <div className="absolute bottom-6 left-[1%] py-6 pl-4 md:pl-8 pr-10 
+      w-[98%] bg-[#332F2F75] rounded-lg text-white z-10">
         <h4 className="text-2xl xl:text-3xl font-semibold mb-2">{title}</h4>
         <ModalServicesItems items={items} />
       </div>

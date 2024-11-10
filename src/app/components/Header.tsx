@@ -7,19 +7,20 @@ import MobileMenu from "./NavItems/MobileMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  console.log(isMenuOpen)
   return (
     <Navbar
       classNames={{
-        wrapper: "max-w-full mx-[4.5vw] px-[2vw] xl:mx-[7.5vw] xl:px-[2.5vw] backdrop-blur-lg mt-4 rounded-3xl bg-[#FAFAF998]",
+        wrapper: "max-w-full mx-[2vw] px-[4vw] xl:mx-[7.5vw] xl:px-[2.5vw] backdrop-blur-lg mt-4 rounded-3xl bg-[#FAFAF998]",
         base: "bg-transparent"
       }}
       isBlurred={false}
+      shouldHideOnScroll
       onMenuOpenChange={setIsMenuOpen}
     >
       <Logo />
       <NavItemsDesktop isMenuOpen={isMenuOpen} />
-      <MobileMenu />
+      <MobileMenu closeMenu={() => setIsMenuOpen(false)}/>
     </Navbar>
   );
 }

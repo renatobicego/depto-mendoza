@@ -2,14 +2,14 @@ import { Divider, Image } from "@nextui-org/react";
 import { FaStar } from "react-icons/fa6";
 const HostCard = () => {
   return (
-    <div className="flex px-6 py-4 gap-12">
+    <div className="flex px-6 py-4 gap-6 md:gap-12">
       <div className="flex flex-col items-center gap-2">
         <Image
           src="/imgs/foto-anfitriona.webp"
           alt="Foto de anfitriona"
           classNames={{
-            wrapper: "rounded-full overflow-hidden",
-            img: "w-44 h-44 object-cover rounded-full",
+            wrapper: "rounded-full overflow-hidden w-36 md:w-44 h-36 md:h-44",
+            img: "w-36 md:w-44 h-36 md:h-44 object-cover rounded-full",
           }}
         />
         <h6 className="text-2xl font-bold">Marcela</h6>

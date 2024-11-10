@@ -8,6 +8,7 @@ import ReviewsModal from "./ReviewsModal/ReviewsModal";
 const ReviewsCard = () => {
   return (
     <motion.section
+      id="reseñas"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.5 }}
@@ -19,14 +20,14 @@ const ReviewsCard = () => {
         alt="puntuacion 5.0"
         className="w-full"
       />
-      <h4 className="text-4xl xl:text-5xl font-bold">Favorito entre huéspedes</h4>
-      <p className="text-2xl lg:max-w-[70%] 2xl:max-w-[50%] text-center">
+      <h4 className="text-4xl xl:text-5xl font-bold text-center">Favorito entre huéspedes</h4>
+      <p className="text-xl xl:text-2xl lg:max-w-[70%] 2xl:max-w-[50%] text-center">
         Este alojamiento está entre el{" "}
         <span className="font-bold">10% de los mejores de todo el mundo</span>{" "}
         en{" "}
         <Link
           href="https://www.airbnb.com/"
-          className="text-airbnb text-2xl font-bold"
+          className="text-airbnb text-xl xl:text-2xl font-bold"
         >
           Airbnb
         </Link>{" "}

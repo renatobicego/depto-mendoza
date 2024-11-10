@@ -4,7 +4,7 @@ import { PiGlobeStand, PiGraduationCap, PiTooth } from "react-icons/pi";
 const AboutMeItems = () => {
   const items = [
     {
-      text: "Nació en la década de los 70",
+      text: "Nací en la década de los 70",
       icon: <IoBalloonOutline className="size-8"/>,
     },
     {
@@ -12,7 +12,7 @@ const AboutMeItems = () => {
       icon: <PiTooth className="size-8"/>,
     },
     {
-      text: "Vive en Las Heras, Argentina",
+      text: "Vivo en Las Heras, Mendoza",
       icon: <PiGlobeStand className="size-8"/>,
     },
     {
@@ -20,12 +20,12 @@ const AboutMeItems = () => {
       icon: <PiGraduationCap className="size-8"/>,
     },
     {
-      text: "Habla Inglés e Italiano",
+      text: "Hablo inglés e italiano",
       icon: <IoLanguageOutline className="size-8"/>,
     },
   ];
   return (
-    <ul className="flex flex-col gap-4 max-w-[50%]">
+    <ul className="flex flex-col gap-4 lg:max-w-[50%]">
       {items.map((item, index) => (
         <li className="flex gap-1 items-center" key={index}>
           {item.icon}

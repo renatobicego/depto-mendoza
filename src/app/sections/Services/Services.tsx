@@ -118,7 +118,7 @@ const Services = () => {
         },
         {
           label: "Ténder para ropa",
-          icon: <GiClothesline />
+          icon: <GiClothesline />,
         },
         {
           label: "Utensilios básicos de cocina",
@@ -219,18 +219,20 @@ const Services = () => {
         {
           label: "AC: Sistema sin conductos tipo split",
           icon: <IoSnowOutline />,
-        }, 
+        },
         {
           label: "Ventilador de techo",
           icon: <PiFan />,
         },
-        
       ],
     },
   ];
   return (
-    <section className="w-full px-[7.5vw] flex flex-col gap-4 items-center bg-foreground text-white rounded-3xl py-20 shadow">
-      <h3 className="text-4xl xl:text-5xl font-bold">¿Qué ofrecemos?</h3>
+    <section
+      id="servicios"
+      className="w-full px-[4.5vw] xl:px-[5vw] flex flex-col gap-4 items-center bg-foreground text-white rounded-3xl py-10 lg:py-20 shadow"
+    >
+      <h3 className="text-4xl xl:text-5xl font-bold mb-2">¿Qué ofrecemos?</h3>
       {serviceData.map((service, index) => (
         <ServiceCard key={index} {...service} />
       ))}

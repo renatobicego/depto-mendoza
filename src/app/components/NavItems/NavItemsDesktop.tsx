@@ -9,6 +9,16 @@ import { FaAirbnb } from "react-icons/fa6";
 import { TbBrandBooking } from "react-icons/tb";
 
 const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "center", // Aligns the element to the middle
+      });
+      window.history.pushState({}, "", `#${id}`);
+    }
+  };
   return (
     <NavbarContent justify="end" className="gap-3">
       <NavbarItem className={`max-lg:hidden`}>
@@ -17,6 +27,10 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           className="border-white"
           as={Link}
           href={"#nosotros"}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("nosotros");
+          }}
         >
           Conocenos
         </SecondaryButton>
@@ -37,6 +51,10 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           className="border-white"
           as={Link}
           href={"#ubicacion"}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("ubicacion");
+          }}
         >
           Ubicación
         </SecondaryButton>
@@ -46,7 +64,8 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           className="text-airbnb border-airbnb p-0.5"
           isIconOnly
           as={Link}
-          href={"#"}
+          target="_blank"
+          href={"https://www.airbnb.com.ar/rooms/1074717187334770899"}
         >
           <FaAirbnb className="size-6" />
         </SecondaryButton>
@@ -56,7 +75,8 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           className="text-booking border-booking p-0.5"
           isIconOnly
           as={Link}
-          href={"#"}
+          target="_blank"
+          href={"https://www.booking.com/Share-1uleo6"}
         >
           <TbBrandBooking className="size-6" />
         </SecondaryButton>
@@ -67,6 +87,10 @@ const NavItemsDesktop = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           color="primary"
           as={Link}
           href={"#contacto"}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("contacto");
+          }}
         >
           Contacto
         </SecondaryButton>
