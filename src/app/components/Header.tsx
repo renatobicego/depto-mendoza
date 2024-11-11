@@ -7,7 +7,6 @@ import MobileMenu from "./NavItems/MobileMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen)
   return (
     <Navbar
       classNames={{
@@ -16,6 +15,7 @@ export default function Header() {
       }}
       isBlurred={false}
       shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
       <Logo />
