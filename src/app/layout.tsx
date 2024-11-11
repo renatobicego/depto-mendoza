@@ -28,20 +28,20 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Departamento Turistas - Mendoza",
-    url: "https://deptomendoza.com/",
+    url: "https://alquilerdeptomendoza.com.ar/",
     siteName: "Departamento Turistas - Mendoza",
     locale: "es_ES",
     type: "website",
     description:
       "Cálido y agradable departamento atendido por su propia dueña. Ubicado en Godoy Cruz, Mendoza. Favorito entre los huéspedes de Airbnb.",
-    images: "https://deptomendoza.com/thumbnail.jpg",
+    images: "https://alquilerdeptomendoza.com.ar/thumbnail.jpg",
   },
   twitter: {
     card: "summary_large_image",
     title: "Departamento Turistas - Mendoza",
     description:
       "Cálido y agradable departamento atendido por su propia dueña. Ubicado en Godoy Cruz, Mendoza. Favorito entre los huéspedes de Airbnb.",
-    images: ["https://deptomendoza.com/thumbnail.jpg"], // Must be an absolute URL
+    images: ["https://alquilerdeptomendoza.com.ar/thumbnail.jpg"], // Must be an absolute URL
   },
   robots: {
     index: true,
@@ -59,11 +59,11 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://deptomendoza.com/",
-    url: "https://deptomendoza.com/",
+    "@id": "https://alquilerdeptomendoza.com.ar/",
+    url: "https://alquilerdeptomendoza.com.ar/",
     name: "Departamento Turistas - Mendoza",
     image: [
-      "https://deptomendoza.com/thumbnail.jpg",
+      "https://alquilerdeptomendoza.com.ar/thumbnail.jpg",
     ],
     description:
       "Cálido y agradable departamento atendido por su propia dueña. Ubicado en Godoy Cruz, Mendoza. Favorito entre los huéspedes de Airbnb.",

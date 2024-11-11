@@ -25,7 +25,7 @@ const Contact = () => {
           alt="instagram"
         />
       ),
-      url: "",
+      url: "https://www.instagram.com/deptomendozaa/",
       label: "instagram",
     },
   ];
