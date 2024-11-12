@@ -4,10 +4,9 @@ import {
   useScroll,
   useTransform,
   motion,
-  useMotionValueEvent,
 } from "framer-motion";
 import SecondaryButton from "../components/SecondaryButton";
-
+import NextImage from "next/image";
 const Banner = () => {
   const { scrollY } = useScroll();
   const filter = useTransform(
@@ -27,6 +26,10 @@ const Banner = () => {
         <Image
           src="/imgs/portada-depto-mendoza.png"
           alt="Portada de Depto Mendoza"
+          as={NextImage}
+          width={1902}
+          height={1070}
+          priority
           classNames={{
             wrapper:
               "absolute top-0 left-0 !max-w-full w-full h-full object-cover",
