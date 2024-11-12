@@ -26,10 +26,8 @@ const Banner = () => {
         <Image
           src="/imgs/portada-depto-mendoza.png"
           alt="Portada de Depto Mendoza"
-          as={NextImage}
           width={1902}
           height={1070}
-          priority
           classNames={{
             wrapper:
               "absolute top-0 left-0 !max-w-full w-full h-full object-cover",
